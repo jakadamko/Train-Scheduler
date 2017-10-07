@@ -3,28 +3,54 @@
    ========================================================================== */
 
 .schedule-container {
-     min-width: 800px;
+    min-width: 800px;
 }
 
 .input-container {
-     min-width: 800px;
+    min-width: 800px;
 }
 
- body {
-      
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-   }
+.text-center {
+    font-family: 'VT323', monospace;
+    animation: createBox 3s;
+    z-index: 2;
+}
 
- table {
-     border-collapse: separate;
-     border-spacing: 6px;
+#trainImg{
+  z-index: 1;
+  position:static;
+  margin-left:46.5%;
+
+}
+
+@keyframes createBox {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.panel > .panel-heading {
+    background-image: url("panelBackround.jpg");
+    background-color: grey;
+    color: white;
+
+}
+
+body {
+
+background-image: url("bodyBackround.jpg");
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 6px;
 }
 
 .jumbotron {
-     color: white;
-     background-color: rgba(0,0,0,0.3);
-     min-width: 800px;
+    color: navy;
+    min-width: 800px;
+    background-image: url("jumboBackground.jpg");
 }

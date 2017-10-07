@@ -1,19 +1,5 @@
 var url = "https://train-scheduler-5a246.firebaseio.com/";
 var dataRef = new Firebase(url);
-var name = '';
-var destination = '';
-var firstTrainTime = '';
-var frequency = '';
-var nextTrain = '';
-var nextTrainFormatted = '';
-var minutesAway = '';
-var firstTimeConverted = '';
-var currentTime = '';
-var diffTime = '';
-var tRemainder = '';
-var minutesTillTrain = '';
-var keyHolder = '';
-var getKey = '';
 
 $(document).ready(function() {
 
@@ -47,7 +33,7 @@ $(document).ready(function() {
         $('#first-train-time-input').val('');
         $('#frequency-input').val('');
 
-        return false;
+        //return false;
     });
 
     dataRef.on("child_added", function(childSnapshot) {

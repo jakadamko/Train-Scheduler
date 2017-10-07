@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TRANSIT</title>
+    <title>JCTRANSIT</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
@@ -15,20 +16,18 @@
 </head>
 
 <body>
-    <!-- Jumbotron -->
     <div class="jumbotron">
-        <h1 class="text-center">NJTRANSIT</h1>
+        <img class="text-center" id="trainImg" src="assets/images/locomotive.png" align="middle" alt="locomotive" height="100" width="100">
+        <h1 class="text-center">JCTRANSIT</h1>
     </div>
     <div class="container schedule-container">
         <div class="row">
-            <!-- Sign-Up Panel-->
             <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">Current Train Schedule</h3>
                     </div>
                     <div class="panel-body">
-                        <!-- Sign-up Form (note the various input "types")-->
                         <table class="train-schedule">
                             <tr>
                                 <th class="col-xs-3">Train Name
@@ -44,25 +43,18 @@
                             </tr>
                         </table>
                     </div>
-                    <!-- closes panel-body -->
                 </div>
-                <!-- closes panel-default -->
             </div>
-            <!-- closes col-lg-6 -->
         </div>
-        <!-- closes row -->
     </div>
-    <!-- closes container -->
     <div class="container input-container">
         <div class="row">
-            <!-- Sign-Up Panel-->
             <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">Add Train</h3>
                     </div>
                     <div class="panel-body">
-                        <!-- Sign-up Form (note the various input "types")-->
                         <form role="form">
                             <div class="form-group">
                                 <label for="text">Train Name</label>
@@ -83,15 +75,10 @@
                             <button type="submit" class="btn btn-primary" id="add-train">Submit</button>
                         </form>
                     </div>
-                    <!-- closes panel-body -->
                 </div>
-                <!-- closes panel-default -->
             </div>
-            <!-- closes col-lg-6 -->
         </div>
-        <!-- closes row -->
     </div>
-    <!-- closes container -->
     <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
     <script src="assets/javascript/app.js"></script>
 </body>
